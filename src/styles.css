@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaina+2:wght@700&family=Merriweather&family=Open+Sans:wght@600&family=PT+Sans&family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&family=Ubuntu:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  background-color: #7400ff;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70vh;
+  padding:25px;
+}
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.figure img {
+  max-width: 80px;
+}
+
+.figure h3 {
+  margin-top: 10px;
+  font-size: 1.7rem;
+}
+
+.main{
+  width: 300px;
+  background: white;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.content {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content input {
+  padding: 10px 15px;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 1rem;
+}
+
+.content input::placeholder{
+  color: black;
+  text-align: center;
+}
+.content i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: black;
+  padding: 8px 13px;
+}
+
+.showItems {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  background-color: #8abee7;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.eachItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 12px;
+  margin: 5px 0;
+}
+
+.todoItem i {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.todoItem .edit {
+  color: green;
+}
+.todoItem .edit:hover{
+  color:rgb(42, 141, 42)
+}
+.todoItem .delete {
+  color: red;
+}
+.todoItem .delete:hover {
+  color: rgb(216, 12, 12);
+}
+
+button {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ button:hover {
+  color: #fff;
+  cursor: pointer;
+ }
+ 
+ button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
